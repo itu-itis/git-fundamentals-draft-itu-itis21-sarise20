@@ -19,7 +19,7 @@ em           {
          }
    -->
 	</head>
-    <body>
+    <body onload="document.body.style.backgroundColor = 'pink'">
      <p>
        <strong> Introduction to Information Systems </strong>
      </p>
@@ -32,13 +32,13 @@ em           {
      </p>
      
      <p> Evolution of Homo species </p>
-     <ul>
+     <ul id="unorderedL" onmouseover="document.getElementById('unorderedL').style.backgroundColor='purple'">
           <li> Homo habilis (able man) </li>
           <li> Homo erectus (upright man) </li>
           <li> Homo neanderthalensis </li>
 		  <li> Homo floresiensis (hobbit) </li>
 		  <li> Homo sapiens (wise man)
-          <ul>
+          <ul id="insideUL" onclick="document.getElementById('insideUL').style.backgroundColor='orange'">
                <li> Homo sapiens sapiens </li>
           </ul>
      </ul>
